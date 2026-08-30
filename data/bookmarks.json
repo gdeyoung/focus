@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "id": "cat_productivity",
+      "name": "Productivity",
+      "color": "#4f8cff",
+      "links": [
+        { "id": "link_github", "name": "GitHub", "order": 0, "url": "https://github.com" },
+        { "id": "link Gmail", "name": "Gmail", "order": 1, "url": "https://mail.google.com" },
+        { "id": "link_calendar", "name": "Calendar", "order": 2, "url": "https://calendar.google.com" }
+      ],
+      "subfolders": []
+    },
+    {
+      "id": "cat_dev",
+      "name": "Development",
+      "color": "#42b883",
+      "links": [
+        { "id": "link_stackoverflow", "name": "Stack Overflow", "order": 0, "url": "https://stackoverflow.com" },
+        { "id": "link_mdn", "name": "MDN Web Docs", "order": 1, "url": "https://developer.mozilla.org" },
+        { "id": "link_huggingface", "name": "Hugging Face", "order": 2, "url": "https://huggingface.co" }
+      ],
+      "subfolders": [
+        {
+          "id": "sub_docs",
+          "name": "Docs",
+          "links": [
+            { "id": "link_python", "name": "Python", "order": 0, "url": "https://docs.python.org" },
+            { "id": "link_docker", "name": "Docker", "order": 1, "url": "https://docs.docker.com" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cat_media",
+      "name": "Media",
+      "color": "#e74c3c",
+      "links": [
+        { "id": "link_youtube", "name": "YouTube", "order": 0, "url": "https://www.youtube.com" },
+        { "id": "link_spotify", "name": "Spotify", "order": 1, "url": "https://open.spotify.com" },
+        { "id": "link_twitch", "name": "Twitch", "order": 2, "url": "https://www.twitch.tv" }
+      ],
+      "subfolders": []
+    },
+    {
+      "id": "cat_news",
+      "name": "News",
+      "color": "#f39c12",
+      "links": [
+        { "id": "link_hn", "name": "Hacker News", "order": 0, "url": "https://news.ycombinator.com" },
+        { "id": "link_reddit", "name": "Reddit", "order": 1, "url": "https://www.reddit.com" }
+      ],
+      "subfolders": []
+    },
+    {
+      "id": "cat_cloud",
+      "name": "Cloud",
+      "color": "#9b59b6",
+      "links": [
+        { "id": "link_aws", "name": "AWS Console", "order": 0, "url": "https://console.aws.amazon.com" },
+        { "id": "link_cloudflare", "name": "Cloudflare", "order": 1, "url": "https://dash.cloudflare.com" }
+      ],
+      "subfolders": []
+    },
+    {
+      "id": "cat_lab",
+      "name": "Homelab",
+      "color": "#1abc9c",
+      "links": [
+        { "id": "link_portainer", "name": "Portainer", "order": 0, "url": "https://localhost:9443" },
+        { "id": "link_grafana", "name": "Grafana", "order": 1, "url": "https://localhost:3000" },
+        { "id": "link_pihole", "name": "Pi-hole", "order": 2, "url": "http://localhost/admin" }
+      ],
+      "subfolders": []
+    }
+  ],
+  "favorites": [
+    { "id": "link_github", "name": "GitHub", "order": 0, "url": "https://github.com" },
+    { "id": "link_youtube", "name": "YouTube", "order": 1, "url": "https://www.youtube.com" },
+    { "id": "link_hn", "name": "Hacker News", "order": 2, "url": "https://news.ycombinator.com" }
+  ],
+  "recentlyAdded": [
+    { "id": "link_mdn", "name": "MDN Web Docs", "order": 0, "url": "https://developer.mozilla.org" }
+  ],
+  "settings": {
+    "name": "Demo User",
+    "showTime": true,
+    "showGreeting": true,
+    "showSearch": true,
+    "searchEngine": "google",
+    "theme": "dark",
+    "clockFormat": "12",
+    "wallpaper": {
+      "type": "gradient",
+      "url": "",
+      "unsplashCategory": "nature",
+      "color": "#3c3cb9",
+      "gradient": "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
+      "blur": 0,
+      "dim": 40
+    }
+  }
+}

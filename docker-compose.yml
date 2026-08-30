@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  focus:
+    build: .
+    container_name: focus
+    ports:
+      - "5000:5000"
+    volumes:
+      # REQUIRED: Map this to persist your bookmarks, settings, and custom icons
+      # This folder will be created automatically on first run
+      - ./data:/app/data
+    restart: unless-stopped
+    environment:
+      - FLASK_ENV=production
+      # Set your timezone for correct greeting (Good morning/afternoon/evening)
+      - TZ=America/Chicago
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+# Data stored in ./data/:
+#   - bookmarks.json     : All settings, tabs, folders, bookmarks, favorites, custom icons
+#   - wallpaper_cache/   : Uploaded custom wallpaper images (optional)
+#
+# Backup: Simply copy the data/ folder
+# Restore: Replace the data/ folder and restart container

@@ -1,0 +1,15 @@
+# Focus - Self-Hosted Start Page
+# Python dependencies
+
+# Web framework - handles routing, templates, JSON responses
+flask>=3.0.0
+
+# Note: All other imports are Python standard library:
+# - json, os, re, base64, hashlib (data handling)
+# - urllib.request, urllib.error (wallpaper proxy requests)
+# - datetime (timestamps, daily seeds)
+# - html.parser (browser bookmark import)
+
+# Optional: For production deployment
+# gunicorn>=21.0.0
+# gevent>=23.0.0
